@@ -1,0 +1,13 @@
+# Mac System Files
+.DS_Store
+
+# Visual Studio Code Files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Powerpoint to Make the Images
+*.pptx
