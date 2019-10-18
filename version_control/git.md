@@ -1,6 +1,7 @@
 ## Introduction
 This document contains frequently used command and the corresponding used cases for version control framework Git. For simplification, all the variables are written in parenthesis, e.g. (files), (tags). The optional parameters are written in sqaure brackets, e.g. [--global], [--mixed]
 
+&nbsp;
 ## Table of Content
 * [Environment Setting](#environment-setting)
 * [Basic Operations](#basic-operations)
@@ -12,6 +13,7 @@ This document contains frequently used command and the corresponding used cases 
 * [Save File Temporarily](#stash)
 * [Remote Control](#remote-control)
 
+&nbsp;
 ## Environment Setting 
 <sub>[Back to Top](#introduction)</sub>
 #### Install Git on Mac
@@ -70,6 +72,7 @@ git log [--oneline] [--graph] [--pretty] [(file)]
 git reflog
 ```
 
+&nbsp;
 ## View Changes
 <sub>[Back to Top](#introduction)</sub>
 #### View changes in every commit
@@ -202,18 +205,21 @@ git checkout [commit.id]
 git reset [--mixed] [files]
 ```
 #### Change HEAD and branch to specific commit (mixed mode)
+* all the commited changes will be __kept in working directory__
 * all the staged changes will be __kept in working directory__
 * all the local changes will be __kept in working directory__
 ```
 git reset [--mixed] [commit.id] 
 ```
 #### Change HEAD and branch to specific commit (soft mode)
-* all the staged changes will be __kept in staging area__
+* all the commited changes will be __kept in staging area__
+* all the staged changes will be __kept in working directory__
 * all the local changes will be __kept in working directory__
 ```
 git reset --soft [commit.id] 
 ```
 #### Change HEAD and branch to specific commit (hard mode)
+* all the commited changes will be __removed__
 * all the staged changes will be __removed__
 * all the local changes will be __removed__
 ```
@@ -221,6 +227,7 @@ git reset --hard [commit.id]
 ```
 &nbsp;
 ## Stash
+<sub>[Back to Top](#introduction)</sub>
 #### Save files temporary
 * useful when you need to change the branch/commit in the middle of development
 * the parameter __-u__ is used to stash the untracked files
@@ -242,6 +249,7 @@ git stash drop stash@{[i]}
   
 &nbsp;
 ## Remote Control
+<sub>[Back to Top](#introduction)</sub>
 #### Clone git repository
 ```
 git clone (url) [(folder)]
