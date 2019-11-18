@@ -5,6 +5,7 @@ This repository contains useful cheatsheet for databases, version control framew
 
 ## Shortcut
 ### Package Management
+* [Advanced Packaging Tools](package_management/advanced_packaging_tool.md)
 * [Homebrew](package_management/homebrew.md)
 
 ### Version Control
