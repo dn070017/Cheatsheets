@@ -7,7 +7,7 @@ This document contains frequently used command and the corresponding used cases 
 * [Install Homebrew](#install-homebrew)
 * [Package Explorer](#package-explorer)
 * [Package Installation](#package-installation)
-* [Update Installed Package](#update-installed-package)
+* [Upgrade Installed Package](#upgrade-installed-package)
 
 &nbsp;
 ## Glossary
@@ -96,25 +96,25 @@ rm -rf (keg)
 brew cleanup (package)
 ```
 &nbsp;
-## Update Installed Package
+## Upgrade Installed Package
 <sub>[Back to Top](#introduction)</sub>
-#### Update specific package
+#### Upgrade specific package
 ```
 brew upgrade (package)
 ```
-#### Show what will be update
+#### Show what will be upgraded
 ```
 brew upgrade --dry-run
 ```
-#### Update all packages except for pinned packages
+#### Upgrade all packages except for pinned packages
 ```
 brew upgrade
 ```
-#### Disallow package to be updated
+#### Disallow package to be upgraded
 ```
 brew pin (package)
 ```
-#### Allow package to be updated
+#### Allow package to be upgraded
 ```
 brew unpin (package)
 ```

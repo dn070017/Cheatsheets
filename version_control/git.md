@@ -114,11 +114,11 @@ git rm --cached [files]
 ```
 #### Rename or move files and stage this operation
 ```
-mv [files] [new.file]
-git add [files] [new.file]
+mv (files] (new.file)
+git add (files] (new.file)
 ```
 ```
-git mv [files] [new.file]
+git mv (files) (new.file)
 ```
 
 &nbsp;
@@ -258,10 +258,19 @@ git clone (url) [(folder)]
 ```
 git remote add (alias) (git.url)
 ```
+#### Check remote Git repository urls and corresponding alias
+```
+git remote --verbose
+```
 #### Update remote repository with changes in local repository
 * update the remote branch with the local branch
 ```
 git push (alias/url) (local.branch)[:(remote.brach)]
+```
+#### Update remote repository with changes in local repository (and set upstream)
+* update the remote branch and fixed the remote alias/url of pull/status for git repository
+```
+git push -u/--set-upstream (alias/url) (local.branch)[:(remote.brach)]
 ```
 #### Fetch updated status from remote server
 ```
