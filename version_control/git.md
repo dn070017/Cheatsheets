@@ -267,7 +267,6 @@ git remote --verbose
 ```
 git push (alias/url) (local.branch)[:(remote.brach)]
 ```
-#### Update remote repository with changes in local repository (and set upstream)
 * update the remote branch and fixed the remote alias/url of pull/status for git repository
 ```
 git push -u/--set-upstream (alias/url) (local.branch)[:(remote.brach)]

@@ -88,7 +88,7 @@ sudo apt-mark showhold
 ```
 sudo apt-mark hold (package)
 ```
-#### Allow package to be updated
+#### Allow package to be upgraded
 ```
 sudo apt-mark unhold (package)
 ```
