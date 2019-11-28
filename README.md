@@ -6,6 +6,7 @@ This repository contains useful cheatsheet for databases, version control framew
 ## Shortcut
 ### Package Management
 * [Advanced Packaging Tools (APT)](package_management/advanced_packaging_tool.md)
+* [Conda](package_management/conda.md)
 * [Homebrew](package_management/homebrew.md)
 * [Yellowdog Updater, Modified (YUM)](package_management/yellowdog_updater_modified.md)
 
