@@ -63,6 +63,10 @@ git add --all
 ```
 git commit -m "(description)"
 ```
+#### Add files to the latest commit (not recommended to amend remote repository)
+```
+git commit --amend --no-edit
+```
 #### Check commit history of Git repository or specific file
 ```
 git log [--oneline] [--graph] [--pretty] [(file)]
@@ -173,12 +177,12 @@ git add [files]
 git commit
 ```
 ```
-git checkout ours [files]
+git checkout --ours [files]
 git add [files]
 git commit
 ```
 ```
-git checkout theirs [files]
+git checkout --theirs [files]
 git add [files]
 git commit
 ```
@@ -261,6 +265,10 @@ git remote add (alias) (git.url)
 #### Check remote Git repository urls and corresponding alias
 ```
 git remote --verbose
+```
+#### Change remote Git repository urls for a specific alias
+```
+git remote set-url (alias) (new.git.url)
 ```
 #### Update remote repository with changes in local repository
 * update the remote branch with the local branch
