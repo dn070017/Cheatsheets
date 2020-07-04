@@ -27,7 +27,7 @@ conda info --envs
 ```
 #### Create Conda environment
 ```
-conda create -n (name) python=(python version) [package A][, package B...]
+conda create -n (name) [python=(python version)] [package A][, package B...]
 ```
 #### Switch Conda environment
 ```
@@ -48,7 +48,7 @@ conda remove --all -n (environment)
 #### Show all channels Conda has tracked
 * use `--env` to show only activated environment
 ```
-conda config [--env] --get channel
+conda config [--env] --get channels
 ```
 #### Disable channel priorities
 * the packages will be installed with the newest version in any listed channel
