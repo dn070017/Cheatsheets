@@ -13,5 +13,8 @@ This repository contains useful cheatsheet for databases, version control framew
 * [Homebrew](package_management/homebrew.md)
 * [Yellowdog Updater, Modified (YUM)](package_management/yellowdog_updater_modified.md)
 
+### Terminal
+* [tmux](terminal/tmux.md)
+
 ### Version Control
 * [Git](version_control/git.md)
