@@ -8,6 +8,7 @@ This document contains frequently used command and the corresponding used cases 
 * [Package Explorer](#package-explorer)
 * [Package Installation](#package-installation)
 * [Upgrade Installed Package](#upgrade-installed-package)
+* [Export and Import](#export-and-import)
 
 &nbsp;
 ## Environment Setting
@@ -27,7 +28,7 @@ conda info --envs
 ```
 #### Create Conda environment
 ```
-conda create -n (name) [python=(python version)] [package A][, package B...]
+conda create -n (name) [package A][, package B...]
 ```
 #### Switch Conda environment
 ```
@@ -133,4 +134,21 @@ vim $conda-root/conda-meta/pinned
 [package A==version]
 [package B==version]
 ...
+```
+
+&nbsp;
+## Export and Import
+<sub>[Back to Top](#introduction)</sub>
+#### Export packages
+* use `-n` to export the pacakges in given environment
+```
+conda list [-n (environment)] --export [> packages.txt]
+```
+#### Import packages
+```
+conda install --file (packages.txt)
+```
+#### Create environment with given packages
+```
+conda create -n (name) --file (packages.txt)
 ```
