@@ -63,8 +63,13 @@ git add --all
 ```
 git commit -m "(description)"
 ```
+#### Amend commit message after commit
+```
+git commit --amend -m "(new dediscription)"
+```
 #### Add files to the latest commit (not recommended to amend remote repository)
 ```
+git add (files)
 git commit --amend --no-edit
 ```
 #### Check commit history of Git repository or specific file
