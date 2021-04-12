@@ -116,12 +116,12 @@ conda remove [-n (environment)] (package)
 ## Upgrade Installed Package
 <sub>[Back to Top](#introduction)</sub>
 #### Upgrade specific package in the activated environment
-* use `-n` to uninstall the pacakge only in given environment
+* use `-n` to update the pacakge only in given environment
 ```
 conda update [-n (environment)] [package]
 ```
 #### Upgrade all packages except for pinned packages
-* use `-n` to uninstall the pacakge only in given environment
+* use `-n` to update the pacakge only in given environment
 ```
 conda update [-n (environment)] --all
 ```
