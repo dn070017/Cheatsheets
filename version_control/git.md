@@ -55,6 +55,10 @@ git status
 ```
 git add (files)
 ``` 
+#### Staging part of the local change to Git repository
+```
+git add -p (files)
+``` 
 #### Staging all local changes (include rename and delete) to Git repository
 ```
 git add --all
@@ -100,7 +104,7 @@ git diff (commit.id) [(file)]
 ```
 git diff (commit.id.A) (commit.id.B) [(file)]
 ```
-#### Check the who changes the file
+#### Check who changes the file
 ```
 git blame [-L (start,end)] (file)
 ```
@@ -123,11 +127,15 @@ git rm --cached [files]
 ```
 #### Rename or move files and stage this operation
 ```
-mv (files] (new.file)
-git add (files] (new.file)
+mv (files) (new.file)
+git add (files) (new.file)
 ```
 ```
 git mv (files) (new.file)
+```
+#### Ustage files
+```
+git restore --staged [files]
 ```
 
 &nbsp;
@@ -191,6 +199,15 @@ git checkout --theirs [files]
 git add [files]
 git commit
 ```
+### Open merge tool when there's a conflict
+```
+git mergetool
+```
+#### Abort merge when there's a conflict
+```
+git merge --abort
+git rebase --abort
+```
 
 &nbsp;
 ## Checkout and Reset
@@ -208,10 +225,6 @@ git checkout HEAD [file]
 ![checkout](assets/checkout.png)
 ```
 git checkout [commit.id]
-```
-#### Undo git add for specific files
-```
-git reset [--mixed] [files]
 ```
 #### Change HEAD and branch to specific commit (mixed mode)
 * all the commited changes will be __kept in working directory__
@@ -249,11 +262,11 @@ git stash list
 ```
 #### Restore files in stash
 ```
-git stash apply stash@{[i]}
+git stash apply stash@{[i]} # e.g. git stash apply stash@{0}
 ```
 #### Delete files in stash
 ```
-git stash drop stash@{[i]}
+git stash drop stash@{[i]} # e.g. git stash drop stash@{0}
 ```
   
 &nbsp;
