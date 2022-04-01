@@ -49,18 +49,18 @@ conda remove --all -n (environment)
 #### Show all channels Conda has tracked
 * use `--env` to show only activated environment
 ```
-conda config [--env] --get channels
+conda config [--env] --get channels channel_priority
 ```
 #### Disable channel priorities
 * the packages will be installed with the newest version in any listed channel
 * use `--env` to set only activated environment
 ```
-conda config [--env] --set channel_priority false
+conda config [--env] --set channel_priority flexible
 ```
 #### Enable channel priorities
 * use `--env` to set only activated environment
 ```
-conda config [--env] --set channel_priority true
+conda config [--env] --set channel_priority strict
 ```
 #### Track new channel with the highest priority
 * use `--env` to set only activated environment
