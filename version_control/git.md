@@ -164,9 +164,18 @@ git checkout [branch]
 ## Merge and Rebase
 <sub>[Back to Top](#introduction)</sub>
 #### Merge
-![merge](assets/merge.png)
-* create a new commit for branch A that merge branch A with branch B
+* create a new commit for branch A that merge branch A with branch B (if there are different commits for branch A and B)
 * branch A will __fastforward__ to the commit made by branch B, if branch B is ahead of branch A
+![merge](assets/merge-ff.png)
+```
+git checkout [branch.A]
+git merge [branch.B]
+```
+
+#### Merge without Fast forward
+* always create a new commit for branch A that merge branch A with branch B
+* branch A will __not fastforward__ to the commit made by branch B, if branch B is ahead of branch A. Instead, a new commit will be made.
+![merge](assets/merge-no-ff.png)
 ```
 git checkout [branch.A]
 git merge [branch.B]
@@ -297,6 +306,10 @@ git push (alias/url) (local.branch)[:(remote.brach)]
 ```
 git push -u/--set-upstream (alias/url) (local.branch)[:(remote.brach)]
 ```
+* update the remote branch with tags
+```
+git push (alias/url) (local.branch)[:(remote.brach)]) --tags
+```
 #### Fetch updated status from remote server
 ```
 git fetch
@@ -308,4 +321,7 @@ git pull [--rebase]
 #### Remove remote branches
 ```
 git push (alias/url) :(branch)
+``` 
+```
+git push (alias/url) --delete (branch) 
 ```
